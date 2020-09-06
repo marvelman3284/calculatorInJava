@@ -105,8 +105,22 @@ public class AdvancedMath {
 
         double solution = Math.sqrt(num1);
 
-        System.out.println("The square root of " + num1 + " is " + solution);
     }
 
+    public static void Exponent() {
+        // Initializing Scanner
+        Scanner sc = new Scanner(System.in);
+
+        // Asking for the first addend
+        System.out.println("What is your base? ");
+        int num1 = sc.nextInt();
+
+        System.out.println("What is your power? ");
+        int num2 = sc.nextInt();
+
+        double solution = Math.pow(num1, num2);
+
+        System.out.println(num1 + " to the" +  num2 + " power is " + solution);
+    }
 
 }
