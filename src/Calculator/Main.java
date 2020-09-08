@@ -18,7 +18,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println(ANSI_ORANGE + "What would you like to do?" + ANSI_RESET + ANSI_BLACK + "\n1.Add"  + ANSI_RESET + ANSI_RED + "\n2.Subtract"  + ANSI_RESET + ANSI_GREEN + "\n3.Multiply"  + ANSI_RESET + ANSI_YELLOW + "\n4.Divide"  + ANSI_RESET + ANSI_PURPLE + "\n5.Absolute Value"  + ANSI_RESET + ANSI_CYAN + "\n6.Addition then Absolute Value"  + ANSI_RESET + ANSI_WHITE + "\n7.Subtraction then Absolute Value"  + ANSI_RESET + ANSI_ORANGE + "\n8.Multiplication then Absolute Value"  + ANSI_RESET + ANSI_BLACK + "\n9.Division then Absolute Value" + ANSI_RESET + ANSI_RED + "\n10.Squaring" + ANSI_RESET + ANSI_GREEN + "\n11.Square Root" + ANSI_RESET + ANSI_YELLOW + "\n12.Exponents" + ANSI_RESET + ANSI_ORANGE + "\n13.Distance between two Points" + ANSI_RESET + ANSI_PURPLE + "\n14.Midpoint between two points");
+        System.out.println(ANSI_ORANGE + "What would you like to do?" + ANSI_RESET + ANSI_BLACK + "\n1.Add"  + ANSI_RESET + ANSI_RED + "\n2.Subtract"  + ANSI_RESET + ANSI_GREEN + "\n3.Multiply"  + ANSI_RESET + ANSI_YELLOW + "\n4.Divide"  + ANSI_RESET + ANSI_PURPLE + "\n5.Absolute Value"  + ANSI_RESET + ANSI_CYAN + "\n6.Addition then Absolute Value"  + ANSI_RESET + ANSI_WHITE + "\n7.Subtraction then Absolute Value"  + ANSI_RESET + ANSI_ORANGE + "\n8.Multiplication then Absolute Value"  + ANSI_RESET + ANSI_BLACK + "\n9.Division then Absolute Value" + ANSI_RESET + ANSI_RED + "\n10.Squaring" + ANSI_RESET + ANSI_GREEN + "\n11.Square Root" + ANSI_RESET + ANSI_YELLOW + "\n12.Exponents" + ANSI_RESET + ANSI_ORANGE + "\n13.Distance between two Points" + ANSI_RESET + ANSI_PURPLE + "\n14.Midpoint between two points" + ANSI_RESET + ANSI_CYAN + "\n15.Slope");
         int choice = sc.nextInt();
 
         if (choice == 1) {
@@ -46,11 +46,11 @@ public class Main {
         } else if (choice == 12) {
             AdvancedMath.Exponent();
         } else if (choice == 13) {
-            AdvancedMath.distance();
+            Geometry.distance();
         } else if (choice == 14) {
-            AdvancedMath.midpoint();
+            Geometry.midpoint();
+        } else if (choice == 15) {
+            Geometry.slope();
         }
-
-
     }
 }
