@@ -2,6 +2,8 @@ package Calculator;
 import java.util.Scanner;
 
 public class Main {
+
+    // color codes
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_BLACK = "\u001B[30m";
     public static final String ANSI_RED = "\u001B[31m";
@@ -13,12 +15,10 @@ public class Main {
     public static final String ANSI_WHITE = "\u001B[37m";
 
     public static void main(String[] args) {
-	// write your code here
-
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println(ANSI_ORANGE + "What would you like to do?" + ANSI_RESET + ANSI_BLACK + "\n1.Add"  + ANSI_RESET + ANSI_RED + "\n2.Subtract"  + ANSI_RESET + ANSI_GREEN + "\n3.Multiply"  + ANSI_RESET + ANSI_YELLOW + "\n4.Divide"  + ANSI_RESET + ANSI_PURPLE + "\n5.Absolute Value"  + ANSI_RESET + ANSI_CYAN + "\n6.Addition then Absolute Value"  + ANSI_RESET + ANSI_WHITE + "\n7.Subtraction then Absolute Value"  + ANSI_RESET + ANSI_ORANGE + "\n8.Multiplication then Absolute Value"  + ANSI_RESET + ANSI_BLACK + "\n9.Division then Absolute Value" + ANSI_RESET + ANSI_RED + "\n10.Squaring" + ANSI_RESET + ANSI_GREEN + "\n11.Square Root" + ANSI_RESET + ANSI_YELLOW + "\n12.Exponents" + ANSI_RESET + ANSI_ORANGE + "\n13.Distance between two Points" + ANSI_RESET + ANSI_PURPLE + "\n14.Midpoint between two points" + ANSI_RESET + ANSI_CYAN + "\n15.Slope");
+        System.out.println(ANSI_ORANGE + "What would you like to do?" + ANSI_RESET + ANSI_BLACK + "\n1.Add"  + ANSI_RESET + ANSI_RED + "\n2.Subtract"  + ANSI_RESET + ANSI_GREEN + "\n3.Multiply"  + ANSI_RESET + ANSI_YELLOW + "\n4.Divide"  + ANSI_RESET + ANSI_PURPLE + "\n5.Absolute Value"  + ANSI_RESET + ANSI_CYAN + "\n6.Addition then Absolute Value"  + ANSI_RESET + ANSI_WHITE + "\n7.Subtraction then Absolute Value"  + ANSI_RESET + ANSI_ORANGE + "\n8.Multiplication then Absolute Value"  + ANSI_RESET + ANSI_BLACK + "\n9.Division then Absolute Value" + ANSI_RESET + ANSI_RED + "\n10.Squaring" + ANSI_RESET + ANSI_GREEN + "\n11.Square Root" + ANSI_RESET + ANSI_YELLOW + "\n12.Exponents" + ANSI_RESET + ANSI_ORANGE + "\n13.Distance between two Points" + ANSI_RESET + ANSI_PURPLE + "\n14.Midpoint between two points" + ANSI_RESET + ANSI_CYAN + "\n15.Slope" + ANSI_RESET + ANSI_GREEN + "\n16.Quadratic" + ANSI_RESET + ANSI_YELLOW + "\n17.Quadratic Graph");
         int choice = sc.nextInt();
 
         if (choice == 1) {
@@ -51,6 +51,10 @@ public class Main {
             Geometry.midpoint();
         } else if (choice == 15) {
             Geometry.slope();
+        } else if (choice == 16) {
+            AdvancedMath.Quadratic();
+        } else if (choice ==17) {
+            AdvancedMath.Quadratic_graph();
         }
     }
 }

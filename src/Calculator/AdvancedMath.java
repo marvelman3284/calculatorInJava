@@ -1,6 +1,7 @@
 package Calculator;
 import java.lang.Math;
 import java.util.Scanner;
+import java.util.*;
 
 public class AdvancedMath {
     public static void AbsoluteValue() {
@@ -123,5 +124,63 @@ public class AdvancedMath {
         double solution = Math.pow(num1, num2);
 
         System.out.println(num1 + " to the" +  num2 + " power is " + solution);
+    }
+    // ax^2 + bx + c = 0
+    public static void Quadratic() {
+
+
+        //Initializing Scanner
+        Scanner sc = new Scanner(System.in);
+
+        // Asking for a
+        System.out.println("What is 'a': ");
+        float a = sc.nextInt();
+
+        // Asking for b
+        System.out.println("What is b: ");
+        float b = sc.nextInt();
+
+        // Asking for c
+        System.out.println("What is 'c': ");
+        float c = sc.nextInt();
+
+        double quad = Math.sqrt(Math.pow(b, 2) - (4*a*c));
+        System.out.println(quad);
+        double quad_0 = -b + quad;
+        double quad_1 = -b - quad;
+        double quad_2 = quad_0 / (2*a);
+        double quad_3 = quad_1 / (2*a);
+        System.out.println("The exact answers are: " + quad_2 + " and " + quad_3);
+    }
+
+    public static void Quadratic_graph() {
+        //Initializing List
+        List<String> cords = new ArrayList<>();
+
+        //Initializing Scanner
+        Scanner sc = new Scanner(System.in);
+
+        // Asking for a
+        System.out.println("What is 'a': ");
+        float a = sc.nextInt();
+
+        // Asking for b
+        System.out.println("What is b: ");
+        float b = sc.nextInt();
+
+        // Asking for c
+        System.out.println("What is 'c': ");
+        float c = sc.nextInt();
+
+        for (float i=-10; i<=10; i++) {
+            double y = Math.pow((a*i),2) + (b*i) + c;
+            String x = Float.toString(i);
+            String str_y = Double.toString(y);
+            String pair = "(" + x + ", " + str_y + ")";
+            cords.add(pair);
+        }
+        for (String s : cords){
+            System.out.println(s + "\n");
+        }
     }
 }
