@@ -160,6 +160,14 @@ public class AdvancedMath {
         //Initializing Scanner
         Scanner sc = new Scanner(System.in);
 
+        // Asking how many cords to generate
+        System.out.println("How many coordinates should be given? ");
+        int amt = (int) Math.floor(sc.nextInt());
+
+        // Asking what x-cord the generation should start at
+        System.out.println("What x-cord should the generation start at? ");
+        float start = sc.nextFloat();
+
         // Asking for a
         System.out.println("What is 'a': ");
         float a = sc.nextInt();
@@ -172,12 +180,13 @@ public class AdvancedMath {
         System.out.println("What is 'c': ");
         float c = sc.nextInt();
 
-        for (float i=-10; i<=10; i++) {
-            double y = Math.pow((a*i),2) + (b*i) + c;
-            String x = Float.toString(i);
+        for (float i=1; i<=amt; i++) {
+            double y = Math.pow((a*start),2) + (b*start) + c;
+            String x = Float.toString(start);
             String str_y = Double.toString(y);
             String pair = "(" + x + ", " + str_y + ")";
             cords.add(pair);
+            start++;
         }
         for (String s : cords){
             System.out.println(s + "\n");
