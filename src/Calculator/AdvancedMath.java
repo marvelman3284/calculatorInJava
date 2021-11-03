@@ -192,4 +192,27 @@ public class AdvancedMath {
             System.out.println(s + "\n");
         }
     }
+
+    public static void quadraticDiscriminant() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("What is a?");
+        double a = sc.nextDouble();
+
+        System.out.println("What is b?");
+        double b = sc.nextDouble();
+
+        System.out.println("What is c?");
+        double c = sc.nextDouble();
+
+        double discrm = (Math.pow(b, 2)) - (4*a*c);
+
+        if (discrm > 0) {
+            System.out.println("You will have 2 real solutions. Your Discriminant is " + discrm);
+        } else if (discrm == 0) {
+            System.out.println("You will have 1 real solution. Your discriminat is " + discrm);
+        } else {
+            System.out.println("You will have 0 real solutions. Your discriminat is " + discrm);
+        }
+    }
 }

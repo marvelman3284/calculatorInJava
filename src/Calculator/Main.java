@@ -18,7 +18,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println(ANSI_ORANGE + "What would you like to do?" + ANSI_RESET + ANSI_CYAN + "\n1.Add"  + ANSI_RESET + ANSI_RED + "\n2.Subtract"  + ANSI_RESET + ANSI_GREEN + "\n3.Multiply"  + ANSI_RESET + ANSI_YELLOW + "\n4.Divide"  + ANSI_RESET + ANSI_PURPLE + "\n5.Absolute Value"  + ANSI_RESET + ANSI_CYAN + "\n6.Addition then Absolute Value"  + ANSI_RESET + ANSI_WHITE + "\n7.Subtraction then Absolute Value"  + ANSI_RESET + ANSI_ORANGE + "\n8.Multiplication then Absolute Value"  + ANSI_RESET + ANSI_YELLOW + "\n9.Division then Absolute Value" + ANSI_RESET + ANSI_RED + "\n10.Squaring" + ANSI_RESET + ANSI_GREEN + "\n11.Square Root" + ANSI_RESET + ANSI_YELLOW + "\n12.Exponents" + ANSI_RESET + ANSI_ORANGE + "\n13.Distance between two Points" + ANSI_RESET + ANSI_PURPLE + "\n14.Midpoint between two points" + ANSI_RESET + ANSI_CYAN + "\n15.Slope" + ANSI_RESET + ANSI_GREEN + "\n16.Quadratic" + ANSI_RESET + ANSI_YELLOW + "\n17.Quadratic Graph");
+        System.out.println(ANSI_ORANGE + "What would you like to do?" + ANSI_RESET + ANSI_CYAN + "\n1.Add"  + ANSI_RESET + ANSI_RED + "\n2.Subtract"  + ANSI_RESET + ANSI_GREEN + "\n3.Multiply"  + ANSI_RESET + ANSI_YELLOW + "\n4.Divide"  + ANSI_RESET + ANSI_PURPLE + "\n5.Absolute Value"  + ANSI_RESET + ANSI_CYAN + "\n6.Addition then Absolute Value"  + ANSI_RESET + ANSI_WHITE + "\n7.Subtraction then Absolute Value"  + ANSI_RESET + ANSI_ORANGE + "\n8.Multiplication then Absolute Value"  + ANSI_RESET + ANSI_YELLOW + "\n9.Division then Absolute Value" + ANSI_RESET + ANSI_RED + "\n10.Squaring" + ANSI_RESET + ANSI_GREEN + "\n11.Square Root" + ANSI_RESET + ANSI_YELLOW + "\n12.Exponents" + ANSI_RESET + ANSI_ORANGE + "\n13.Distance between two Points" + ANSI_RESET + ANSI_PURPLE + "\n14.Midpoint between two points" + ANSI_RESET + ANSI_CYAN + "\n15.Slope" + ANSI_RESET + ANSI_GREEN + "\n16.Quadratic" + ANSI_RESET + ANSI_YELLOW + "\n17.Quadratic Graph" + ANSI_RESET + ANSI_RED + "\n18.Quadratic Discriminate");
         int choice = sc.nextInt();
 
         switch (choice) {
@@ -39,6 +39,7 @@ public class Main {
             case 15 -> Geometry.slope();
             case 16 -> AdvancedMath.Quadratic();
             case 17 -> AdvancedMath.Quadratic_graph();
+            case 18 -> AdvancedMath.quadraticDiscriminant();
         }
     }
 }
